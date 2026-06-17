@@ -2960,6 +2960,7 @@ local function MatchReadyUp()
     if VoteReady then
 
     RunVoteSkip()
+	end
 end
 
 local function CastMapVote(MapId, PosVec)
