@@ -3627,9 +3627,12 @@ function TDS:StartGame()
 end
 
 function TDS:Ready()
+    warn("GameState =", GameState)
     if GameState ~= "GAME" then
+        warn("Ready blocked")
         return false 
     end
+    warn("Calling MatchReadyUp")
     MatchReadyUp()
 end
 
